@@ -42,9 +42,51 @@ export default function Jogo(){
                     }
                     setEsconder(mostrar);
                 }
-
+                else if(!escolher.includes(letra)) {setForca(forca+1);}
             }
-            else if(!escolher.includes(letra)) {setForca(forca+1);}
+            
         }
     }
+    function Forca(){
+        if(forca===0){
+            return <img src={forca0}/>
+        }
+        if(forca===1){
+            return <img src={forca1}/>
+        }
+        if(forca===2){
+            return <img src={forca2}/>
+        }
+        if(forca===3){
+            return <img src={forca3}/>
+        }
+        if(forca===4){
+            return <img src={forca4}/>
+        }
+        if(forca===5){
+            return <img src={forca5}/>
+        }
+        if(forca===6){
+            return <img src={forca6}/>
+        }
+        else{
+            return <img src={forca6}/>
+        }
+    }
+
+    function Cor(){
+        if(forca>5){
+            return "";
+        }
+        else if(forca<6 && esconder.includes("_")){
+            return "";
+        }
+        else if(forca<6 && !esconder.includes("_")){
+            return "";
+        }
+    }
+    const funcaoForca = Forca();
+    const funcaoCor = Cor();
+
+    
 }
