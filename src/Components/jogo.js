@@ -88,5 +88,30 @@ export default function Jogo(){
     const funcaoForca = Forca();
     const funcaoCor = Cor();
 
-    
+    return(
+        <div>
+            <Centralizar>
+                <Topo>
+                    <Forcao></Forcao>
+                    <InicarJogo>
+                        <Botoes onClick={iniciar} forca={forca}{(forca < 6 && funcaoColor !== "#039614" || letraUsada.length === 0) ? "Escolher Palavra" : "Reiniciar Jogo"}></Botoes>
+                        <Embaralhar forca={forca} style={{ color: `${funcaoCor}` }}{(forca < 6) ? hideword : escolher}></Embaralhar>
+                    </InicarJogo>
+                </Topo>
+                <Teclado></Teclado>
+            </Centralizar>
+        </div>
+    );
 }
+
+const Centralizar = styled.div``
+
+const Topo = styled.div``
+
+const Botoes = styled.div``
+
+const InicarJogo = styled.div``
+
+const Embaralhar = styled.div``
+
+const Forcao = styled.div``
