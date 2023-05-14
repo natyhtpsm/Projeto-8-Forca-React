@@ -8,7 +8,7 @@ export default function Letras(props) {
             <Teclado>
                 {alphabeth.map((letra, i) => { 
                         return(
-                            <Botoes onClick={(() => props.clicked(letra, i))} isClicked={props.letraUsada.includes(letra)} key={j} disabled={props.letraUsada.includes(letra)}>{letra}</Botoes>
+                            <Botoes data-test="letter" onClick={(() => props.clicked(letra, i))} isClicked={props.letraUsada.includes(letra)} key={j} disabled={props.letraUsada.includes(letra)}>{letra}</Botoes>
                         )
                     })
                 }
