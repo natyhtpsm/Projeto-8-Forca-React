@@ -1,8 +1,10 @@
-import Jogo from './Components/Jogo';
+import Jogo from './Components/jogo.js';
 
-function App() {
+function App(){
   return (
-    <Jogo></Jogo>
+    <>
+      <Jogo></Jogo>
+    </>
   );
 }
 
