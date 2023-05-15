@@ -11,8 +11,6 @@ import forca4 from './assets/forca4.png';
 import forca5 from './assets/forca5.png';
 import forca6 from './assets/forca6.png';
 
-
-
 export default function Jogo() {
 
   const [usedletters, setusedletters] = useState([])
