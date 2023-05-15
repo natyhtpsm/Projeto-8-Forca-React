@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Letras from "./Components/Letras";
-import Palavras from "./Components/Palavras";
+import Palavras from "./Palavras";
 import Chute from "./Components/Chute";
 import GlobalStyle from "./GlobalStyle";
 
